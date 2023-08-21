@@ -1,0 +1,53 @@
+//- layout.pug/base.pug
+doctype html
+html
+  head
+    title Dance Academy
+    block scripts
+      //- script(src="../static/index.js") of home.pug or any file which have script part is placed here
+     
+    block style
+      //- include ../staticfolder/style.css of home.pug or any file is placed here
+  body
+    nav#navbar.top.firstclass.secondclass 
+        //- here navbar is id and top,firstclass,secondclass is class for nav tag
+        ul 
+            //- | to print something as plain text we need to use pipe char but there are difffernt ways to print plain text on website see docs
+            div#logo
+                a(href="/") 
+                    img(src = "/static/img/logo.png")
+                    | DA
+               
+                
+            li #[a(href="/") Home ]
+            li #[a(href="/") About Us ]
+            li #[a(href="/") Class Info ]
+            li #[a(href="./contact") Contact US ]
+            li #[a(href="/") Signup]
+   
+    block content
+      //- body of the home.pug or any page of site is placed here
+      //- h1 My Site
+      p Welcome to my super lame site.
+    
+    footer#footer 
+      | Copyright &copy; 2023 
+      a(href="#navbar") DanceAcademy.com
+      | ! All Rights Reserved.
+
+    block footer 
+      
+
+      
+
+   
+
+    //- block footer
+      //- footer#footer 
+        | Copyright &copy; 2023 
+        a(href="#navbar") DanceAcademy.com
+        | ! All Rights Reserved.    this code of home.pug is pklace here
+
+    
+
+

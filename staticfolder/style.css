@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@700&display=swap');
+
+
+*{
+    margin:0px;  /*reseeting the margin of top*/
+    box-sizing: border-box;    
+    padding: 0px;
+}
+
+
+
+
+#logo
+{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* so that menu bar thoda right se mein khisak jaaye that is menu and logo ke beech mein gap aa jaaye */
+    margin-right: 40px;
+    font-size: 25px;
+    
+  
+}
+#logo a
+{
+    /* making the logo imagae a link to itself page  */
+    text-decoration: none ;
+    color:white;
+}
+
+#logo img{
+    height: 36px;
+    filter: invert();
+    /* change the color of image that change black color to white */
+    
+
+
+}
+
+
+#navbar{
+    background-color: #ff4545;
+    padding: 20px 14px;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Caveat', cursive;
+   
+}
+
+
+#navbar ul{ 
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* cause we need to move the menu at the left */
+    align-items: center;
+    /* vertically center aligned */
+    
+}
+
+#navbar li{ 
+  
+    list-style:  none;
+}
+#navbar li a {
+    text-decoration: none; /*removind underline from links*/
+    padding: 10px 27px;
+    font-size: 27px;
+    color: white;
+
+}
+
+#navbar li a:hover{
+    color:black
+    
+
+}
+
+#introsection {
+    padding-bottom: 88px;
+    height: 425px;
+    /* background-color: red; */
+    background:url("./static/bg1.jpg") no-repeat center/cover ;
+
+    
+    /* here we need to use static instead of statifolder cause in app js we say looking the image in staticfolder but the the url of image is localhost:8000/static/bg1.jpg */
+    color: white;
+    display: flex;
+    flex-direction: column ; /*so that 2 div items of introsection come in stack order */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+    /* font-family: 'Caveat', cursive; */
+    font-size: 40px;
+
+}
+#introsection div.small{
+    font-size: 30px;;
+}
+#missionsection{
+    height: 336px;
+    background-color: wheat;
+
+    margin: auto;
+    width: 100%;
+    display: block;
+   
+   
+}
+
+#missionsection h2{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Caveat', cursive;
+   
+    /* color: black; */
+    font-size: 50px;
+    /* margin-top: 20px; */
+    /* so color also neeche khisak jaayega so andar se margin dete hai called padding */
+
+    padding-top: 20px;
+}
+.card
+{
+    display: inline-block;
+    /* we make inline block so that we can set width acc to our own  */
+  
+    
+
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:23px  14px;
+    padding: 3px 10px;
+    width: 31%;
+    height: 155px;
+    background-color: #ff9191;
+}
+
+.card h3{
+    text-align: center;
+    margin: 12px; font-family: 'Abril Fatface', cursive;
+    font-family: 'Caveat', cursive;
+    font-size:  23px;
+}
+
+.card-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-img{
+    height: 75px;
+    padding: 0px 10px;
+}
+
+.card-img img{
+    height: inherit;
+    /* The inherit keyword specifies that a property should inherit its value from its parent element. so the parent of img tag is card-img element so its height is 75px so the height of image also the 75px*/
+}
+
+.card-content
+{
+    padding: 0px 20px;
+}
+.card-content p{
+    font-size: 16px;
+}
+
+
+
+
+#sponsorsection{
+    height: 300px;
+    /* background-color: #ff5353; */
+    background-color: #ffb4b4;
+    /* background-image:url("./bg1.jpg"); */
+}
+
+#sponsors
+{
+    /* border: 3px solid black; */
+    height: 180px;
+    width: 70%;
+    margin: auto;
+
+}
+.spimage
+{
+    height: 80%;
+    margin: 20px;
+
+}
+
+
+#sponsorsection h2{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Caveat', cursive;
+    /* color: white; */
+    font-size: 50px;
+    /* margin-top: 20px; */
+    /* so color also neeche khisak jaayega so andar se margin dete hai called padding */
+
+    padding-top: 20px;
+}
+
+#footer{
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Caveat', cursive;
+}
+#footer a{
+    /* making the danceacademy.conm a link and when click , smooth scrooloing happens to top  */
+    text-decoration: none ;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}

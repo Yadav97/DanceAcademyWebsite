@@ -1,0 +1,82 @@
+//- pug file has indentations and js fiunctions  -- > pugjs is verty easy to write and read than plain html 
+//- index.pug
+doctype html
+html
+  head
+    title Dance Academy
+    style
+      include ../staticfolder/style.css
+  body
+    //- h1 My Site
+    //- p Welcome to my super lame site.
+    nav#navbar.top.firstclass.secondclass 
+        //- here navbar is id and top,firstclass,secondclass is class for nav tag
+        ul 
+            //- | to print something as plain text we need to use pipe char but there are difffernt ways to print plain text on website see docs
+            div#logo
+                a(href="/") 
+                    img(src = "/static/img/logo.png")
+                    | DA
+               
+                
+            li #[a(href="/") Home ]
+            li #[a(href="/") About Us ]
+            li #[a(href="/") Class Info ]
+            li #[a(href="/") Contact US ]
+            li #[a(href="/") Signup]
+    section#introsection 
+        //- | this section is for big picture background 
+        div Welcome to Dance Academy 
+        div.small Eat Sleep Dance Repeat
+
+    section#missionsection 
+        //- | this is mission section 
+        h2 Our Mission 
+        div.card
+            h3 Dance perfection 
+            div.card-box
+                div.card-img
+                    img(src = "/static/img/1.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, fuga!
+
+
+        div.card
+            h3 Best Teaching 
+            div.card-box
+                div.card-img
+                    img(src = "/static/img/2.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, fuga!
+
+
+
+        div.card
+            h3 Different Dances culture 
+            div.card-box
+                div.card-img
+                    img(src = "/static/img/3.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, fuga!
+            
+            
+
+    
+    section#sponsorsection 
+        //- | this is sponsor section 
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/img/logo1.png" class="spimage")
+            img(src="/static/img/logo2.png" class="spimage")
+            img(src="/static/img/logo3.png" class="spimage")
+            img(src="/static/img/logo4.png" class="spimage")
+
+    footer#footer 
+        | Copyright &copy; 2023 
+        a(href="#navbar") DanceAcademy.com
+        | ! All Rights Reserved.
+
+
+
+    script
+      include ../staticfolder/index.js

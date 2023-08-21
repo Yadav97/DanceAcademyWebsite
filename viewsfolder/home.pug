@@ -1,0 +1,66 @@
+extends base.pug
+
+block scripts 
+    script(src="../static/index.js")
+
+block style 
+    style 
+        include ../staticfolder/style.css
+
+block content 
+    //- h1 My Site
+    //- p Welcome to my super lame site.
+    //- here nav bar code is written earlier but now we put in base.pug so that we get on every page of website 
+    section#introsection 
+        //- | this section is for big picture background 
+        div Welcome to Dance Academy 
+        div.small Eat Sleep Dance Repeat
+
+    section#missionsection 
+        //- | this is mission section 
+        h2 Our Mission 
+        div.card
+            h3 Dance perfection 
+            div.card-box
+                div.card-img
+                    img(src = "/static/img/1.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, fuga!
+
+
+        div.card
+            h3 Best Teaching 
+            div.card-box
+                div.card-img
+                    img(src = "/static/img/2.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, fuga!
+
+
+
+        div.card
+            h3 Different Dances culture 
+            div.card-box
+                div.card-img
+                    img(src = "/static/img/3.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, fuga!
+            
+            
+
+    
+    section#sponsorsection 
+        //- | this is sponsor section 
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/img/logo1.png" class="spimage")
+            img(src="/static/img/logo2.png" class="spimage")
+            img(src="/static/img/logo3.png" class="spimage")
+            img(src="/static/img/logo4.png" class="spimage")
+
+//- block footer    
+//-      footer#footer 
+//-         | Copyright &copy; 2023 
+//-         a(href="#navbar") DanceAcademy.com
+//-         | ! All Rights Reserved.
+

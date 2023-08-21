@@ -1,0 +1,29 @@
+extends base.pug
+
+block scripts 
+    script(src="../static/index.js")
+
+block style 
+    style 
+        include ../staticfolder/style.css
+        include ../staticfolder/formContact.css
+        //- form css file
+
+
+
+block content 
+    h1 Contact Us
+    p #{succesMessage}
+    p #{failureMessage}
+
+    div.container
+        form(action="/contact" method="post" class="myform")
+            input(type="text" name="name" class="myinput" placeholder="Enter your name")
+            input(type="email" name="email" class="myinput" placeholder="Enter your email")
+            input(type="phone" name="phone" class="myinput" placeholder="Enter your Phone")
+            input(type="text" name="addr" class="myinput" placeholder="Enter your Address")
+            input(type="text" name="concern" class="myinput" placeholder="Enter your Concern")
+            button(class="btn")
+                |Submit
+
+//- block footer    
